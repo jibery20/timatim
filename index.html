@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    body {
+      background-color: aqua;
+      text-align: center;
+      transition: background 1s ease;
+    }
+ 
+    .image-bg {
+      background-image: url('rhode.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    h1 {
+      color: rgb(17, 8, 8);
+    }
+
+    img {
+      width: 160px;
+      height: auto;
+      border-radius: 50%;
+      display: block;
+      margin: 10px auto;
+    }
+
+    button {
+      padding: 10px 2px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>I'm Back</h1>
+  <p>Hi! My name is Jibery Timatim.</p>
+  <img src="jibery.jpg" alt="picture" />
+
+  <h2>Class Expectations</h2>
+  <p>I expect that we will pass all in this subject and follow your rules.</p>
+
+  <h2>Subject Expectation</h2>
+  <p>I expect that the content should reflect current trends and developments, and I expect to learn more in this subject.</p>
+
+  <h2>Future PHP Projects</h2>
+  <p>I want to master concepts like classes, inheritance, and polymorphism.</p>
+
+  <button type="button" id="toggleBtn">Change background!</button>
+
+  <script>
+    document.getElementById('toggleBtn').addEventListener('click', function() {
+      document.body.classList.toggle('image-bg');
+    });
+  </script>
+</body>
+</html>
